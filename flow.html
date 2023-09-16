@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress tracking</title>
+    <link rel="stylesheet" type="text/css" href="flow.css">
+    <style>
+        td {
+            text-align: center;
+        }
+        .title-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust the margin-top as needed */
+        }
+        .title {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <div class="title-container">
+        <h1 class="title">Plant tracking</h1>
+    </div>
+
+    <table border="2" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <th style="vertical-align: middle;">Number trays</th>
+            <th style="vertical-align: middle;">Name</th>
+        </tr>
+        <tr>
+            <td><button class="button1" style="vertical-align: middle;"
+                    onclick="window.location.href='dataTray1.html'"><span><b>Tray 1</b></span></button></td>
+            <td id="value-output1"></td>
+        </tr>
+        <tr>
+            <td><button class="button1" style="vertical-align: middle;"
+                    onclick="window.location.href='dataTray2.html'"><span><b>Tray 2</b></span></button></td>
+            <td id="value-output2"></td>
+        </tr>
+        <tr>
+            <td><button class="button1" style="vertical-align: middle;"
+                    onclick="window.location.href='dataTray3.html'"><span><b>Tray 3</b></span></button></td>
+            <td id="value-output3"></td>
+        </tr>
+        <tr>
+            <td><button class="button1" style="vertical-align: middle;"
+                    onclick="window.location.href='dataTray4.html'"><span><b>Tray 4</b></span></button></td>
+            <td id="value-output4"></td>
+        </tr>
+    </table>
+
+    <script src="flow.js"></script>
+
+</body>
+</html>

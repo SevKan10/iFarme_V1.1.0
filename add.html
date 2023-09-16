@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add vegetable</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" href="add.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+    <div class="w3-card-4">
+        <div class="w3-container w3-green">
+            <h2>Add Vegetables</h2>
+        </div>
+        <form class="w3-container">
+            <!-- Name vegetable -->
+            <p>
+                <label class="w3-text-green" for="txtName"><b>Name vegetable:</b></label>
+                <input class="w3-input w3-border w3-sand" type="text" name="txtName" id="txtName" required
+                    onfocus="doico1()" onblur="doilai1()">
+            </p>
+            <!-- Temp -->
+            <p>
+                <label class="w3-text-green" for="txtTemp"><b>Temp:</b></label>
+                <input class="w3-input w3-border w3-sand" type="number" name="txtTemp" id="txtTemp" required
+                    onfocus="doico2()" onblur="doilai2()">
+            </p>
+            <!-- Humidity -->
+            <p>
+                <label class="w3-text-green" for="txtHum"><b>Hum:</b></label>
+                <input class="w3-input w3-border w3-sand" type="number" name="txtHum" id="txtHum" required
+                    onfocus="doico3()" onblur="doilai3()">
+            </p>
+            <div class="center-select">
+                <p>
+                <p>
+                    <label class="w3-text-green" for="tray"><b>Tray planting:</b></label>
+                    <select class="w3-input w3-border w3-sand" id="tray" name="tray">
+                        <option value="">Tray</option>
+                        <option value="1" id="tray1">1</option>
+                        <option value="2" id="tray2">2</option>
+                        <option value="3" id="tray3">3</option>
+                        <option value="4" id="tray4">4</option>
+                    </select>
+                </p>
+                <!-- Day, month, year planting -->
+                <p>
+                    <label class="w3-text-green"><b>Day, month, year planting:</b></label>
+                    <!-- Day -->
+                    <select class="w3-input w3-border w3-sand" id="day" name="day">
+                        <option value="">Day</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <!-- Month -->
+                    <select class="w3-input w3-border w3-sand" id="month" name="month">
+                        <option value="">Month</option>
+                        <option value="01"> 1</option>
+                        <option value="02"> 2</option>
+                        <option value="03"> 3</option>
+                        <option value="04"> 4</option>
+                        <option value="05"> 5</option>
+                        <option value="06"> 6</option>
+                        <option value="07"> 7</option>
+                        <option value="08"> 8</option>
+                        <option value="09"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11"> 11</option>
+                        <option value="12"> 12</option>
+                    </select>
+                    <!-- Year -->
+                    <select class="w3-input w3-border w3-sand" id="year" name="year">
+                        <option value="">Year</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </p>
+                <p>
+                    <label class="container" for="chAcpt">
+                        <input type="checkbox" name="chAcpt" id="chAcpt" checked="checked">Confirm
+                        <span class="checkmark"></span>
+                    </label>
+
+                </p>
+                <p>
+                    <button class="w3-btn w3-blue" type="button" onclick="submitValue()">Send data</button>
+                    <button class="w3-btn w3-red" type="button" onclick="tai_lai_trang()">Retype</button>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div id="ketqua"></div>
+
+    <script src="add.js"></script>
+</body>
+
+</html>
