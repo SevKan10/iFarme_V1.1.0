@@ -5,9 +5,9 @@ const firebaseConfig = {
     projectId: "ifarme-df868",
     storageBucket: "ifarme-df868.appspot.com",
     messagingSenderId: "124564135650",
-    appId: "1:124564135650:web:e969f361eb2d8611fb48bb",
-    measurementId: "G-V3SCKCZMV9"
-}
+    appId: "1:124564135650:web:a14ef2be10383e73fb48bb",
+    measurementId: "G-BHJERYJBM5"
+  };
 
 const app = firebase.initializeApp(firebaseConfig);
 
